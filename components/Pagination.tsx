@@ -103,7 +103,7 @@ export default function Pagination({
       >
         <Link
           href="/blog/archive"
-          className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 bg-white dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 font-thin tracking-wide font-serif"
+          className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 bg-gray-50 dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 font-thin tracking-wide font-serif"
           title="查看博客归档"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -119,12 +119,12 @@ export default function Pagination({
         {hasPrevPage ? (
           <Link
             href={buildPageUrl(currentPage - 1)}
-            className="px-3 py-2 text-sm font-medium text-gray-500 bg-white dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-l-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors font-thin tracking-wide font-serif"
+            className="px-3 py-2 text-sm font-medium text-gray-500 bg-gray-50 dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-l-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors font-thin tracking-wide font-serif"
           >
             上一页
           </Link>
         ) : (
-          <span className="px-3 py-2 text-sm font-medium text-gray-300 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-l-md cursor-not-allowed font-thin tracking-wide font-serif">
+          <span className="px-3 py-2 text-sm font-medium text-gray-300 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-l-md cursor-not-allowed font-thin tracking-wide font-serif">
             上一页
           </span>
         )}
@@ -152,7 +152,7 @@ export default function Pagination({
               className={`px-3 py-2 text-sm font-medium border transition-colors font-thin tracking-wide font-serif ${
                 isCurrentPage
                   ? 'z-10 bg-gray-300 dark:bg-gray-600 border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-200'
-                  : 'bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
+                  : 'bg-gray-50 dark:bg-gray-800 border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
               }`}
             >
               {pageNumber}
@@ -164,12 +164,12 @@ export default function Pagination({
         {hasNextPage ? (
           <Link
             href={buildPageUrl(currentPage + 1)}
-            className="px-3 py-2 text-sm font-medium text-gray-500 bg-white dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-r-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors font-thin tracking-wide font-serif"
+            className="px-3 py-2 text-sm font-medium text-gray-500 bg-gray-50 dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-r-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors font-thin tracking-wide font-serif"
           >
             下一页
           </Link>
         ) : (
-          <span className="px-3 py-2 text-sm font-medium text-gray-300 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-r-md cursor-not-allowed font-thin tracking-wide font-serif">
+          <span className="px-3 py-2 text-sm font-medium text-gray-300 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-r-md cursor-not-allowed font-thin tracking-wide font-serif">
             下一页
           </span>
         )}
@@ -186,7 +186,7 @@ export default function Pagination({
                 value={jumpPage}
                 onChange={(e) => setJumpPage(e.target.value)}
                 onKeyPress={handleKeyPress}
-                className="w-12 h-8 px-2 text-center text-sm border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-thin tracking-wide font-serif
+                className="w-12 h-8 px-2 text-center text-sm border border-gray-300 dark:border-gray-600 rounded-md bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white font-thin tracking-wide font-serif
                   focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-500 focus:border-gray-400 dark:focus:border-gray-500
                   hover:border-gray-400 dark:hover:border-gray-500
                   transition-all duration-200

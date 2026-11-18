@@ -206,7 +206,7 @@ export default function TagPageWithPagination() {
         </motion.section>
 
       {/* Blog Tags */}
-      <section className="bg-white dark:bg-gray-800 py-8 border-b border-gray-200 dark:border-gray-700">
+      <section className="bg-gray-50 dark:bg-gray-800 py-8 border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap gap-3">
             <Link
@@ -233,7 +233,7 @@ export default function TagPageWithPagination() {
       </section>
 
       {/* Blog Posts */}
-      <section className="bg-white dark:bg-gray-800 py-12">
+      <section className="bg-gray-50 dark:bg-gray-800 py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {posts.length > 0 ? (
             <div className="space-y-8">

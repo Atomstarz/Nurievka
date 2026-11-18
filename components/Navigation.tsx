@@ -42,7 +42,7 @@ export default function Navigation({ posts, thoughts }: NavigationProps) {
 
   return (
     <>
-      <nav className="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 z-50">
+      <nav className="fixed top-0 w-full bg-gray-50/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 z-50">
         <div className="container-custom">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}

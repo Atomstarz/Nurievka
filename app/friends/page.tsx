@@ -100,7 +100,7 @@ export default function FriendsPage() {
     >
       <NavigationWrapper />
       
-      <main className="min-h-screen bg-white dark:bg-gray-900 pt-16">
+      <main className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-16">
         {/* Hero Section */}
         <motion.section 
           className="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white py-16 relative overflow-hidden"
@@ -126,7 +126,7 @@ export default function FriendsPage() {
                 {featuredFriends.map((friend) => (
                   <motion.div
                     key={friend.id}
-                    className="group relative bg-white dark:bg-gray-800 rounded-2xl border border-gray-200/60 dark:border-gray-700/60 overflow-hidden hover:shadow-lg dark:hover:shadow-xl transition-all duration-300"
+                    className="group relative bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-200/60 dark:border-gray-700/60 overflow-hidden hover:shadow-lg dark:hover:shadow-xl transition-all duration-300"
                     whileHover={{ 
                       y: -8,
                       scale: 1.02,
@@ -260,7 +260,7 @@ export default function FriendsPage() {
                 {otherFriends.map((friend) => (
                   <motion.div
                     key={friend.id}
-                    className="group relative bg-white dark:bg-gray-800 rounded-xl border border-gray-200/60 dark:border-gray-700/60 overflow-hidden hover:shadow-lg dark:hover:shadow-xl transition-all duration-300"
+                    className="group relative bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200/60 dark:border-gray-700/60 overflow-hidden hover:shadow-lg dark:hover:shadow-xl transition-all duration-300"
                     whileHover={{ 
                       y: -6,
                       scale: 1.02,
@@ -441,7 +441,7 @@ export default function FriendsPage() {
             </motion.div>
 
             <motion.div 
-              className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200/60 dark:border-gray-700/60 overflow-hidden relative group"
+              className="bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-200/60 dark:border-gray-700/60 overflow-hidden relative group"
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}

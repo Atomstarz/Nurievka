@@ -187,7 +187,7 @@ export default function HomePageClient({ recentPosts }: HomePageClientProps) {
     <>
       {/* Hero Section */}
       <motion.section 
-        className="min-h-screen bg-white dark:bg-gray-900 flex items-center justify-center"
+        className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center"
         initial="hidden"
         animate="visible"
         variants={containerVariants}

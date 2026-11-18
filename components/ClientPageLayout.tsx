@@ -11,7 +11,7 @@ interface ClientPageLayoutProps {
 
 export default function ClientPageLayout({ children }: ClientPageLayoutProps) {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 flex flex-col">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
       {/* Navigation - 使用空数据的客户端版本 */}
       <NavigationWrapper />
 

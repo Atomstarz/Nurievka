@@ -244,7 +244,7 @@ export default function ArchivePage() {
         </motion.section>
 
         {/* Archive Content */}
-        <section className="bg-white dark:bg-gray-800 py-12 min-h-screen">
+        <section className="bg-gray-50 dark:bg-gray-800 py-12 min-h-screen">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             {Object.keys(groupedPosts).length > 0 ? (
               <div className="space-y-12">
@@ -254,7 +254,7 @@ export default function ArchivePage() {
                     <AnimatedYearGroup key={year} index={yearIndex}>
                       <div className="relative">
                         {/* 年份标题 */}
-                        <div className="sticky top-20 z-10 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 pb-3 mb-8">
+                        <div className="sticky top-20 z-10 bg-gray-50/80 dark:bg-gray-800/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 pb-3 mb-8">
                           <h2 className="text-2xl font-thin tracking-widest font-serif text-gray-900 dark:text-white">
                             {year} 年
                           </h2>

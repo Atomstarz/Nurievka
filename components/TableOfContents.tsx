@@ -273,7 +273,7 @@ export default function TableOfContents({ content, onCollapseChange }: TableOfCo
 
   return (
     <div className="sticky top-24 transition-all duration-300 ease-in-out z-10">
-      <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden transition-all duration-300 ease-in-out ${
+      <div className={`bg-gray-50 dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden transition-all duration-300 ease-in-out ${
         isCollapsed ? 'w-16' : 'w-80'
       }`}>
         {/* Header with toggle button */}

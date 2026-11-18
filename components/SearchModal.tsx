@@ -192,7 +192,7 @@ export default function SearchModal({ isOpen, onClose, posts, thoughts }: Search
       
       {/* 搜索框 - 简约设计 */}
       <div className="relative w-full max-w-2xl">
-        <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+        <div className="bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
           {/* 搜索输入区域 */}
           <div className="flex items-center p-4 border-b border-gray-200 dark:border-gray-700">
             {/* 搜索图标 */}

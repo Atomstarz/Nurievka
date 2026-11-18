@@ -88,7 +88,7 @@ export default function ProjectsPage() {
     >
       <NavigationWrapper />
       
-      <main className="min-h-screen bg-white dark:bg-gray-900 pt-16">
+      <main className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-16">
         {/* Hero Section */}
         <motion.section 
           className="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white py-16 relative overflow-hidden"
@@ -114,7 +114,7 @@ export default function ProjectsPage() {
                 {featuredProjects.map((project, index) => (
                   <motion.div
                     key={project.id}
-                    className="group relative bg-white dark:bg-gray-800 rounded-2xl border border-gray-200/60 dark:border-gray-700/60 overflow-hidden hover:shadow-lg dark:hover:shadow-xl transition-all duration-300"
+                    className="group relative bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-200/60 dark:border-gray-700/60 overflow-hidden hover:shadow-lg dark:hover:shadow-xl transition-all duration-300"
                     whileHover={{ 
                       y: -8,
                       transition: { duration: 0.3, ease: "easeOut" }
@@ -266,7 +266,7 @@ export default function ProjectsPage() {
                 {otherProjects.map((project, index) => (
                   <motion.div
                     key={project.id}
-                    className="group relative bg-white dark:bg-gray-800 rounded-xl border border-gray-200/60 dark:border-gray-700/60 p-6 hover:shadow-lg dark:hover:shadow-xl transition-all duration-300"
+                    className="group relative bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200/60 dark:border-gray-700/60 p-6 hover:shadow-lg dark:hover:shadow-xl transition-all duration-300"
                     whileHover={{ 
                       y: -6,
                       transition: { duration: 0.3, ease: "easeOut" }

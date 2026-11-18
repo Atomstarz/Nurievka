@@ -8,7 +8,7 @@ export default function NotFound() {
     <>
       <NavigationWrapper />
       
-      <main className="min-h-screen bg-white dark:bg-gray-900 pt-16 flex items-center justify-center relative overflow-hidden">
+      <main className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-16 flex items-center justify-center relative overflow-hidden">
         <div className="max-w-lg mx-auto text-center px-4 relative z-10">
           {/* 404动画图标 */}
           <div className="mb-12">

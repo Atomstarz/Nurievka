@@ -232,7 +232,7 @@ export default function AboutPage() {
                 initial={{ opacity: 0, y: 10 }}
                 whileHover={{ opacity: 1, y: 0 }}
               >
-                <span className="text-sm text-gray-500 dark:text-gray-400 font-thin tracking-wide font-serif bg-white dark:bg-gray-800 px-3 py-1 rounded-full shadow-md">
+                <span className="text-sm text-gray-500 dark:text-gray-400 font-thin tracking-wide font-serif bg-gray-50 dark:bg-gray-800 px-3 py-1 rounded-full shadow-md">
                   点击查看大图
                 </span>
               </motion.div>
@@ -529,7 +529,7 @@ export default function AboutPage() {
                         borderColor: "rgb(209 213 219)"
                       }}
                       transition={{ duration: 0.2, ease: "easeOut" }}
-                      className="flex-1 bg-white dark:bg-gray-900 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-800"
+                      className="flex-1 bg-gray-50 dark:bg-gray-900 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-800"
                     >
                       <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                         <div>
@@ -662,7 +662,7 @@ export default function AboutPage() {
                         borderColor: "rgb(209 213 219)"
                       }}
                       transition={{ duration: 0.2, ease: "easeOut" }}
-                      className="flex-1 bg-white dark:bg-gray-900 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-800"
+                      className="flex-1 bg-gray-50 dark:bg-gray-900 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-800"
                     >
                       <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                         <div>
@@ -783,7 +783,7 @@ export default function AboutPage() {
                       borderColor: "rgb(209 213 219)"
                     }}
                     transition={{ duration: 0.2, ease: "easeOut" }}
-                    className="group bg-white dark:bg-gray-900 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-800"
+                    className="group bg-gray-50 dark:bg-gray-900 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-800"
                   >
                     <motion.div 
                       initial={{ scale: 0, opacity: 0 }}

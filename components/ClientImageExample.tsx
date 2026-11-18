@@ -48,7 +48,7 @@ const ClientImageExample: React.FC = () => {
       </div>
 
       {/* 方法1: 使用专门的ClientImage组件 */}
-      <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
         <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
           方法1: 使用ClientImage组件（推荐）
         </h3>
@@ -67,7 +67,7 @@ const ClientImageExample: React.FC = () => {
       </div>
 
       {/* 方法2: 使用ClientImageSimple组件 */}
-      <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
         <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
           方法2: 使用ClientImageSimple组件（高性能）
         </h3>
@@ -86,7 +86,7 @@ const ClientImageExample: React.FC = () => {
       </div>
 
       {/* 方法3: 使用ImageWithLoading组件的autoProcessPath属性 */}
-      <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
         <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
           方法3: 使用ImageWithLoading组件的autoProcessPath属性
         </h3>
@@ -106,7 +106,7 @@ const ClientImageExample: React.FC = () => {
       </div>
 
       {/* 方法4: 使用Hook手动处理路径 */}
-      <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
         <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
           方法4: 使用useAssetPath Hook手动处理
         </h3>
@@ -123,7 +123,7 @@ const ClientImageExample: React.FC = () => {
       </div>
 
       {/* 方法5: 批量处理路径 */}
-      <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
         <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
           方法5: 使用useAssetPaths Hook批量处理
         </h3>
