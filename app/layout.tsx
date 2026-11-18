@@ -162,7 +162,7 @@ export default function RootLayout({
           href={getServerAssetPath('/atom.xml')}
         />
       </head>
-      <body className={inter.className}>
+      <body className="antialiased">
         <DynamicHead />
         <GoogleAnalytics />
         <Suspense fallback={null}>
