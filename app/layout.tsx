@@ -96,7 +96,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh-CN" suppressHydrationWarning>
+    <html lang="ru" className="dark">
       <head>
         {/* 字体预连接和预加载优化 */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
