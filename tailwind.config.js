@@ -59,6 +59,11 @@ module.exports = {
           800: '#323f4b',
           900: '#1f2933',
         },
+        neon: {
+          blue: '#00f0ff',
+          pink: '#ff007f',
+          yellow: '#ffea00',
+        }
       },
       fontFamily: {
         sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],

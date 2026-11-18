@@ -2,38 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Mono+One&display=swap');
+
+@tailwind base;
+
+
 @layer base {
+  @layer base {
   html {
     scroll-behavior: smooth;
-    /* Оставили только стандартные и красивые шрифты */
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
-
+  
+  /* Делаем тело сайта темно-синим по умолчанию */
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: #f0f4f8; /* Мягкий светло-синий фон вместо белого */
-    font-display: swap;
-    font-weight: 400;
+    background-color: #0a1128; /* Глубокий темно-синий */
+    color: #e2e8f0; /* Светло-серый текст */
   }
-
-  .dark body {
-    background-color: #102a43; /* Глубокий темно-синий фон */
-  }
-
-  *, *::before, *::after {
-    font-family: inherit;
-  }
-
+  
+  /* А тут магия граффити для заголовков */
   h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+    font-family: 'Rubik Mono One', 'Permanent Marker', sans-serif;
     line-height: 1.2;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    text-transform: uppercase; /* Граффити любит капс */
+    letter-spacing: 2px;
+    /* Неоновое свечение для заголовков */
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
   }
-
-  code, pre, .font-mono {
-    font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Source Code Pro', 'Consolas', 'Liberation Mono', 'Menlo', monospace;
+  
+  /* Красим ссылки при наведении в кислотный цвет */
+  a {
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #00f0ff; /* Электрический голубой */
+    text-shadow: 0 0 8px #00f0ff;
   }
 
   @media (max-width: 768px) {

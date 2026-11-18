@@ -135,7 +135,7 @@ export const siteConfig = {
           name: "Облака и DevOps",
           skills: [
             { name: "Docker/Kubernetes", level: 30 },
-            { name: "AWS/阿里云", level: 20 },
+            { name: "AWS/", level: 20 },
             { name: "Linux", level: 50 },
             { name: "CI/CD", level: 20 }
           ]
