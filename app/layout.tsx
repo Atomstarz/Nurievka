@@ -162,7 +162,7 @@ export default function RootLayout({
           href={getServerAssetPath('/atom.xml')}
         />
       </head>
-      <body className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
+      <body className={inter.className}>
         <DynamicHead />
         <GoogleAnalytics />
         <Suspense fallback={null}>
