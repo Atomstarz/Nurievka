@@ -37,19 +37,19 @@ function showSpinner(message) {
 
 function showHelp() {
   console.log(`
-Homepage 项目创建工具
+Homepage
 
-用法:
-  npm create homepage <项目名称>
-  npx create-homepage <项目名称>
+:
+  npm create homepage <>
+  npx create-homepage <>
 
-示例:
+:
   npm create homepage my-blog
   npm create homepage my-website
 
-选项:
-  -h, --help    显示帮助信息
-  -v, --version 显示版本信息
+:
+  -h, --help
+  -v, --version
   `);
 }
 
@@ -61,15 +61,15 @@ function showVersion() {
 
 async function createProject(projectName) {
   if (!projectName) {
-    console.error('❌ 错误: 请提供项目名称');
-    console.log('用法: npm create homepage <project-name>');
+    console.error('❌ : 请提供项目名称');
+    console.log(': npm create homepage <project-name>');
     process.exit(1);
   }
 
   const targetDir = path.join(process.cwd(), projectName);
   
   if (fs.existsSync(targetDir)) {
-    console.error(`❌ 错误: 目录 "${projectName}" 已存在`);
+    console.error(`❌ :  "${projectName}" 已存在`);
     process.exit(1);
   }
 

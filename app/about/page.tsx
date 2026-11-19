@@ -78,10 +78,10 @@ function AnimatedSection({ children, className = "", delay = 0 }: {
 
 // 技能图标映射
 const skillIcons: { [key: string]: any } = {
-  '后端开发': ServerIcon,
-  '数据库': ServerIcon,
-  '云服务与运维': CloudIcon,
-  '前端技术': CodeBracketIcon,
+  '': ServerIcon,
+  '': ServerIcon,
+  '': CloudIcon,
+  '': CodeBracketIcon,
 };
 
 export default function AboutPage() {
