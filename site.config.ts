@@ -142,9 +142,7 @@ export const siteConfig = {
     enabled: true,
     title: "Хотелки",
     description: "Все то что я хотеть",
-    items: [
-      s: {}
-      
+    items: [ 
     ]
   },
 
