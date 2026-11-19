@@ -151,6 +151,7 @@ export const siteConfig = {
         status: ".", 
         cover: ".", // пока оставьте картинку от книги
         description: ".",
+        review: ".",
         tags: ["..."],
         purchaseLinks: {}
       }
