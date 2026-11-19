@@ -138,11 +138,22 @@ export const siteConfig = {
   },
 
   // Книги (можно использовать как вишлист)
-  books: {
+  books: {  books: {
     enabled: true,
     title: "Хотелки",
-    description: "Все то что я хотеть",
-    items: [ 
+    description: "Все то что я хочу",
+    items: [
+      {
+        id: "",
+        title: "",
+        author: "", // можно оставить пустым
+        rating: 5,
+        status: "", 
+        cover: "", // пока оставьте картинку от книги
+        description: ".",
+        tags: [""],
+        purchaseLinks: {}
+      }
     ]
   },
 
