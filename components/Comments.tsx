@@ -154,7 +154,7 @@ const getCommentConfig = (): CommentConfig | null => {
               recordIP: config.recordIP,
               enableQQ: config.enableQQ,
               requiredFields: config.requiredFields
-            } as ValineConfig
+            } as any
           };
         }
         break;
