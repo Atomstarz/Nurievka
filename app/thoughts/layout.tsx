@@ -1,6 +1,6 @@
 export const metadata = {
-  title: '随笔',
-  description: '记录生活中的点滴思考',
+  title: 'Заметки',
+  description: 'Мысли о жизни и технологиях',
 };
 
 export default function ThoughtsLayout({
@@ -9,4 +9,4 @@ export default function ThoughtsLayout({
   children: React.ReactNode;
 }) {
   return children;
-} 
+}

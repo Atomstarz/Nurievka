@@ -6,15 +6,15 @@ export const dynamic = 'force-static';
 
 export async function GET() {
   const posts = getAllPosts();
-  
+
   const feed = new RSS({
     title: siteConfig.title,
     description: siteConfig.description,
     site_url: siteConfig.url,
     feed_url: `${siteConfig.url}/rss.xml`,
-    language: 'zh-cn',
+    language: 'ru',
     pubDate: new Date(),
-    ttl: 60,
+                       ttl: 60,
   });
 
   posts.forEach((post) => {
@@ -35,4 +35,4 @@ export async function GET() {
       'Cache-Control': 'public, max-age=3600, stale-while-revalidate=86400',
     },
   });
-} 
+}
