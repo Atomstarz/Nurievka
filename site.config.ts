@@ -1,74 +1,49 @@
 export const siteConfig = {
-  // Основная информация
   name: "Alan | Atom_star",
   title: "Nurievka",
   description: "Рассказы из жизни",
-  url: "https://example.com", // позже замените на свой адрес Vercel
+  url: "https://example.com", 
   
-  // Профиль
   profile: {
     avatar: "/images/avatar.jpg",
     bio: "17 лет, поступаю в КФУ",
     location: "Уфа | Казань",
-    email: "", // вставьте свою почту
-    github: "https://github.com/Atomstarz", // вставьте свой GitHub
+    email: "", 
+    github: "https://github.com/Atomstarz",
     social: {
       twitter: "",
       youtube: "",
       telegram: "",
       instagram: "",
     },
-    rss: {
-      enabled: true,
-      title: "RSS-подписка",
-    },
-    oldSite: {
-      enabled: false,
-      url: "https://old.example.com",
-      title: "Старая версия сайта",
-    },
+    rss: { enabled: true, title: "RSS-подписка" },
+    oldSite: { enabled: false, url: "https://old.example.com", title: "Старая версия" },
   },
 
-  // Главная страница
   hero: {
     quickLinks: [
       { name: "Блог", href: "/blog", icon: "BookOpen" },
       { name: "Заметки", href: "/thoughts", icon: "PenTool" },
-      { name: "Проекты", href: "/projects", icon: "Code" },
       { name: "Обо мне", href: "/about", icon: "User" },
     ],
   },
 
-  // Блог
   blog: {
-    pagination: {
-      postsPerPage: 10,
-      maxVisiblePages: 5,
-    },
-    homepage: {
-      recentPostsCount: 5,
-    },
-    display: {
-      showExcerpt: true,
-      excerptLength: 150,
-      showReadTime: true,
-      showTags: true,
-      maxTagsToShow: 3,
-    },
+    pagination: { postsPerPage: 10, maxVisiblePages: 5 },
+    homepage: { recentPostsCount: 5 },
+    display: { showExcerpt: true, excerptLength: 150, showReadTime: true, showTags: true, maxTagsToShow: 3 },
   },
 
-  // Навигация
   navigation: {
     main: [
       { name: "Главная", href: "/" },
       { name: "Блог", href: "/blog" },
       { name: "Заметки", href: "/thoughts" },
-      { name: "Проекты", href: "/projects" },
-      { name: "Хотелки", href: "/books" }, // можно переименовать в «Вишлист»
+      { name: "Хотелки", href: "/books" }, 
+      { name: "Обо мне", href: "/about" },
     ],
   },
 
-  // Страница «Обо мне»
   about: {
     intro: {
       title: "Обо мне",
@@ -77,96 +52,60 @@ export const siteConfig = {
         "Здесь я делюсь своими мыслями, рассказываю о жизни и веду список желаний. Добро пожаловать!"
       ]
     },
-    
     education: {
       title: "Образование",
-      items: [
-        {
-          year: "2027-2031",
-          degree: "Школьник",
-          school: "11 класс",
-          description: "Буду учиться на IT-направлении.",
-          gpa: ""
-        }
-      ]
+      items: [{ year: "2027-2031", degree: "Школьник", school: "11 класс", description: "Буду учиться на IT-направлении.", gpa: "" }]
     },
-    
     experience: {
       title: "Опыт",
-      items: [
-        {
-          year: "2026 – сейчас",
-          title: "Начинающий разработчик",
-          company: "Личные проекты",
-          description: "Изучаю веб-разработку, собираю свой первый сайт.",
-          highlights: [
-            "Сделал этот сайт на Next.js",
-            "Разбираюсь с Git и GitHub",
-            "Учусь деплоить проекты на Vercel"
-          ]
-        }
-      ]
+      items: [{ year: "2026 – сейчас", title: "Начинающий разработчик", company: "Личные проекты", description: "Изучаю веб-разработку, собираю свой первый сайт.", highlights: ["Сделал этот сайт на Next.js", "Разбираюсь с Git и GitHub"] }]
     },
-    
     skills: {
       title: "Навыки",
-      categories: [
-        {
-          name: "Life",
-          skills: [
-            { name: "Swimming", level: 75 },
-            { name: "Python", level: 30 },
-            { name: "Gamer", level: 50 },
-            
-          ]
-        },
-        
-      ]
+      categories: [{ name: "Life", skills: [{ name: "Swimming", level: 75 }, { name: "Python", level: 30 }, { name: "Gamer", level: 50 }] }]
     },
   },
 
-  // Проекты
   projects: {
-    enabled: true,
+    enabled: false, // Отключил, чтобы не было ошибок
     title: "Проекты",
-    description: "То, что я делаю руками",
-    items: [
-      {
-        creating: "Создаем))"
-      }
-    ]
+    description: "",
+    items: [],
   },
 
-  // Книги (можно использовать как вишлист)
   books: {
     enabled: true,
     title: "Хотелки",
-    description: "Все то что я хочу",
-    items: [
-      {
-        id: ".",
-        title: ".",
-        author: ".", // можно оставить пустым
-        rating: 5,
-        status: ".", 
-        cover: ".", // пока оставьте картинку от книги
-        description: ".",
-        review: ".",
-        tags: ["..."],
-        purchaseLinks: {}
-      }
-    ]
+    description: "Все то, что я хочу",
+    items: [], // Оставил пустым, ошибок не будет
   },
 
+  friends: {
+    enabled: false, // Отключил
+    title: "Друзья",
+    description: "",
+    items: [],
+  },
 
+  // ВОТ ТОТ САМЫЙ БЛОК SEO, ИЗ-ЗА КОТОРОГО БЫЛА ОШИБКА
+  seo: {
+    keywords: ["личный сайт", "блог", "заметки", "Next.js", "Alan"],
+    openGraph: { type: "website", locale: "ru_RU", siteName: "Nurievka" },
+  },
 
+  analytics: { googleAnalyticsId: "" },
 
-  // Подвал
+  comments: {
+    enabled: false,
+    provider: "giscus",
+    giscus: { repo: "", repoId: "", category: "", categoryId: "", mapping: "pathname", theme: "noborder_dark", lang: "ru", loading: "lazy", reactionsEnabled: true, emitMetadata: false, inputPosition: "bottom" },
+    gitalk: { clientID: "", clientSecret: "", repo: "", owner: "", admin: [], language: "ru", perPage: 10, distractionFreeMode: false, pagerDirection: "last", createIssueManually: false, enableHotKey: true },
+    valine: { appId: "", appKey: "", placeholder: "", avatar: "mp", meta: [], pageSize: 10, lang: "ru", visitor: true, highlight: true, recordIP: false, enableQQ: false, requiredFields: [] },
+    waline: { serverURL: "", placeholder: "", avatar: "mp", meta: [], pageSize: 10, lang: "ru", visitor: true, highlight: true, recordIP: false, enableQQ: false, requiredFields: [] },
+  },
+
   footer: {
-    copyright: {
-      owner: "Alan",
-      startYear: "2026",
-      showCurrentYear: true,
-    },
+    copyright: { owner: "Alan", startYear: "2026", showCurrentYear: true },
+    beian: { police: "", icp: "" }, // Убрал китайские номера
   },
 };
