@@ -138,7 +138,7 @@ export const siteConfig = {
   },
 
   // Книги (можно использовать как вишлист)
-  books: {  books: {
+  books: {
     enabled: true,
     title: "Хотелки",
     description: "Все то что я хочу",
