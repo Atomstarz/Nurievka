@@ -297,8 +297,8 @@ export default function BlogPostContent({ post, prevPost, nextPost }: BlogPostCo
                           </svg>
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="text-sm text-gray-500 dark:text-gray-400 font-thin tracking-wide font-serif">上一篇</p>
-                          <p className="text-gray-900 dark:text-white font-medium truncate font-thin tracking-wide font-serif">
+                          <p className="text-sm text-slate-500 font-light">Предыдущая</p>
+                          <p className="text-sm text-slate-500 font-light">Следующая</p>
                             {prevPost.title}
                           </p>
                         </div>
@@ -346,7 +346,7 @@ export default function BlogPostContent({ post, prevPost, nextPost }: BlogPostCo
                     >
                         ←
                     </motion.span>
-                    <span>返回博客列表</span>
+                                        <span>Назад к списку статей</span>
                 </Link>
               </div>
 

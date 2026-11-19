@@ -24,7 +24,7 @@ export default function NavigationWrapper({ posts: initialPosts, thoughts: initi
   const fetchData = async () => {
     try {
       setIsLoading(true);
-      
+
       // 并行获取博客和随笔数据
       const [postsResponse, thoughtsResponse] = await Promise.all([
         fetch('/api/posts'),
@@ -41,7 +41,7 @@ export default function NavigationWrapper({ posts: initialPosts, thoughts: initi
         setThoughts(thoughtsData.thoughts || []);
       }
     } catch (error) {
-      console.error('获取导航数据失败:', error);
+            console.error('Ошибка получения данных навигации:', error);
     } finally {
       setIsLoading(false);
     }

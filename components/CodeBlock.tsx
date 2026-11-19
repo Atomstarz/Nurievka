@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 // 动态导入 Prism，避免 SSR 问题
 const PrismHighlighter = dynamic(() => import('./PrismHighlighter'), {
   ssr: false,
-  loading: () => <div>加载中...</div>
+  loading: () => <div>Загрузка...</div>
 });
 
 // 复制图标组件
@@ -179,7 +179,7 @@ export default function CodeBlock({
                   display: 'flex',
                   alignItems: 'center'
                 }}
-                title="复制代码"
+                title="Копировать код"
               >
                 {copied ? (
                   <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -205,7 +205,7 @@ export default function CodeBlock({
                   alignItems: 'center',
                   transition: 'transform 0.2s ease'
                 }}
-                title={isCollapsed ? '展开代码' : '收起代码'}
+                title={isCollapsed ? 'Развернуть' : 'Свернуть'}
               >
                 <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 14l5-5 5 5" />
@@ -295,7 +295,7 @@ export default function CodeBlock({
               textTransform: 'uppercase',
               letterSpacing: '0.5px'
             }}>
-              代码已收起 ({lines.length} 行) - {language === 'text' ? 'CODE' : language}
+              Код свернут ({lines.length} стр.) - {language === 'text' ? 'CODE' : language}
             </div>
             
             {/* 展开按钮 */}
@@ -311,7 +311,7 @@ export default function CodeBlock({
                 display: 'flex',
                 alignItems: 'center'
               }}
-              title="展开代码"
+              title="Развернуть"
             >
               <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

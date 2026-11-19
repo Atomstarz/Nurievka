@@ -125,8 +125,8 @@ export default function BackToTop({
           : 'opacity-0 translate-y-2 pointer-events-none'
         }
       `}
-      title="回到顶部"
-      aria-label="回到顶部"
+      title="Наверх"
+      aria-label="Наверх"
     >
       <svg
         className="w-5 h-5 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"

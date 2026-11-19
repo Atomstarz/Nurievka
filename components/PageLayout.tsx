@@ -1,30 +1,20 @@
+// PageLayout.tsx
 import NavigationWrapper from './NavigationWrapper';
 import Footer from './Footer';
 import SuspenseWrapper from './SuspenseWrapper';
 import BackToTop from './BackToTop';
 
-interface PageLayoutProps {
-  children: React.ReactNode;
-}
-
-export default function PageLayout({ children }: PageLayoutProps) {
+export default function PageLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
-      {/* Navigation */}
-              <NavigationWrapper />
-
-      {/* Main Content */}
-      <main className="flex-1 pt-16">
-        <SuspenseWrapper loadingText="页面加载中...">
-          {children}
-        </SuspenseWrapper>
-      </main>
-
-      {/* Footer */}
-      <Footer />
-      
-      {/* Back to Top Button */}
-      <BackToTop />
+    <div className="min-h-screen bg-[#0f172a] flex flex-col">
+    <NavigationWrapper />
+    <main className="flex-1 pt-16">
+    <SuspenseWrapper loadingText="Загрузка страницы...">
+    {children}
+    </SuspenseWrapper>
+    </main>
+    <Footer />
+    <BackToTop />
     </div>
   );
-} 
+}
