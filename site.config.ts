@@ -144,14 +144,14 @@ export const siteConfig = {
     description: "Все то что я хочу",
     items: [
       {
-        id: "",
-        title: "",
-        author: "", // можно оставить пустым
+        id: ".",
+        title: ".",
+        author: ".", // можно оставить пустым
         rating: 5,
-        status: "", 
-        cover: "", // пока оставьте картинку от книги
+        status: ".", 
+        cover: ".", // пока оставьте картинку от книги
         description: ".",
-        tags: [""],
+        tags: ["..."],
         purchaseLinks: {}
       }
     ]
