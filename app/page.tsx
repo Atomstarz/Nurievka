@@ -30,17 +30,17 @@ export default function HomePage() {
 
   if (loading) {
     return (
-      <motion.div 
-        className="flex items-center justify-center min-h-screen"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}
+      <motion.div
+      className="flex items-center justify-center min-h-screen bg-[#0f172a]"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
       >
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 dark:border-white mx-auto mb-4"></div>
-          <p className="text-gray-600 dark:text-gray-400">加载中...</p>
-        </div>
+      <div className="text-center">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#3b82f6] mx-auto mb-4"></div>
+      <p className="text-slate-400">Загрузка...</p>
+      </div>
       </motion.div>
     );
   }
