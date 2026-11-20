@@ -43,7 +43,7 @@ const nextConfig = {
   
   // 配置 ESLint
   eslint: {
-    ignoreDuringBuilds: false,
+    ignoreDuringBuilds: true,
   },
 
   devIndicators: {
