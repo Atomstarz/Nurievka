@@ -1,10 +1,13 @@
 'use client';
 
+import { useEffect, useState, useRef } from 'react'; // <-- ВОТ ЭТА СТРОЧКА
+import Link from 'next/link';
+import { useParams } from 'next/navigation';
+import { motion, useInView } from 'framer-motion';
 import ClientPageLayout from '@/components/ClientPageLayout';
 import NotFoundContent from '@/components/NotFoundContent';
 import Pagination from '@/components/Pagination';
 import { siteConfig } from '@/site.config';
-
 // Анимации
 function AnimatedSection({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number; }) {
   const ref = useRef(null);
