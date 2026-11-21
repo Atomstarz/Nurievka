@@ -77,7 +77,23 @@ export const siteConfig = {
     enabled: true,
     title: "Хотелки",
     description: "Все то, что я хочу",
-    items: [], // Оставил пустым, ошибок не будет
+    items: [
+      {
+        id: "keyboard, swim", // Уникальный ID (латиницей, без пробелов)
+        title: "хочу все))", // Название желания
+        author: "arena", // Бренд или категория (можно написать "Техника")
+        rating: 5, // Приоритет от 1 до 5 (звездочки)
+        status: "hochu", // Оставляем так (плашка будет "Хочу")
+        cover: "/home/alan/my-wishlist-sity/luffy.jpg", // Путь к картинке
+        description: "Хочу это))", // Краткое описание
+        review: "Очень жду, когда смогу его купить!", // Твой комментарий
+        tags: ["Техника", "Подарок"], // Теги
+        purchaseLinks: {
+          // Ссылки на магазины (можно оставить только те, которые нужны)
+          клавиатура: "https://ozon.ru/t/hWwuypq",
+          плавание: "https://www.arenarussia.ru/gds.php?id=3273527&color=fuchsia"
+        }
+      }], 
   },
 
   friends: {
